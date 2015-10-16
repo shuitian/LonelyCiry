@@ -9,7 +9,7 @@ public class Elements : MonoBehaviour {
     /// <summary>
     /// 静态成员，元素个数
     /// </summary>
-    public const int ELEMENT_NUMBER = 8;
+    public const int ELEMENT_NUMBER = 5;
 
     /// <summary>
     /// 元素
@@ -36,25 +36,5 @@ public class Elements : MonoBehaviour {
         /// 土元素
         /// </summary>
         EARTH,
-        /// <summary>
-        /// 光元素
-        /// </summary>
-        LIGHT,
-        /// <summary>
-        /// 暗元素
-        /// </summary>
-        DARK,
-        /// <summary>
-        /// 雷元素
-        /// </summary>
-        THUNDER,
-        /// <summary>
-        /// 无
-        /// </summary>
-        NONE,
-        /// <summary>
-        /// 所有
-        /// </summary>
-        ALL,
     }
 }
