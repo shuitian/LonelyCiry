@@ -118,7 +118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 293441fe416c7884e9f295e4ba2300c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  introduction: 
+  name: 
   moveComponent: {fileID: 0}
   hpComponent: {fileID: 0}
   mpComponent: {fileID: 0}
@@ -249,7 +249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21eb2eabb3ee7874d91b1c577dcd471a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  introduction: 
+  name: 
   moveComponent: {fileID: 0}
   resourceComponent: {fileID: 0}
 --- !u!114 &798571951
@@ -321,6 +321,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68b0bf2040d9fd94f9c44ce9650127e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  name: 
 --- !u!114 &1227082873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -333,7 +334,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 1
-  maxLevel: 0
+  maxLevel: 10
+  levelUpGold: 0100000002000000030000000400000005000000060000000700000008000000090000000a000000
 --- !u!114 &1227082874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -346,7 +348,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackDistance: 10
-  attacks: []
+  attacks:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
   attackTimePerSecond: 1
   attackType: {fileID: 0}
 --- !u!4 &1227082875

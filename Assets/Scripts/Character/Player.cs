@@ -7,6 +7,7 @@ using System.Collections;
 [RequireComponent(typeof(ResourceComponent))]
 public class Player : Character{
 
+    public static Player player;
     /// <summary>
     /// 资源组件
     /// </summary>
@@ -15,6 +16,7 @@ public class Player : Character{
 
     void Awake()
     {
+        player = this;
         resourceComponent = GetComponent<ResourceComponent>();
     }
 }

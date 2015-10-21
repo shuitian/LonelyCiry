@@ -18,6 +18,11 @@ public class LevelComponent : BaseComponent
     public int maxLevel;
 
     /// <summary>
+    /// 升级所需金币
+    /// </summary>
+    public int[] levelUpGold;
+
+    /// <summary>
     /// 设置等级
     /// </summary>
     /// <param name="p_level">新的等级</param>
@@ -33,10 +38,23 @@ public class LevelComponent : BaseComponent
     }
 
     /// <summary>
+    /// 试着升级
+    /// </summary>
+    /// <returns>已经是最大等级返回0，升级成功返回1，升级失败返回-1</returns>
+    public int TryToLevelUp()
+    {
+        if (Player.player.resourceComponent.TryToLoseMoney(levelUpGold[level]))
+        {
+            return LevelUp();
+        }
+        return -1;
+    }
+
+    /// <summary>
     /// 升级
     /// </summary>
     /// <returns>实际增加的等级</returns>
-    public int LevelUp()//返回实际增加的等级数
+    int LevelUp()//返回实际增加的等级数
     {
         if (IsMaxLevel())
         {
